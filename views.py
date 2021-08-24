@@ -73,7 +73,7 @@ def result(request):
             ans = model.predict([lis])
         else:
                 ans = model.predict([lis])
-        ans=ans-200000
+        
         ans=str(ans)[1:-1]
         return render(request,'result.html',{'ans':ans})
 
